@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>project_application</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>addUserLoginServlet</servlet-name>
+  	<servlet-class>userole.addUserLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addUserLoginServlet</servlet-name>
+  	<url-pattern>/addloginaccount</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>updateLoginServlet</servlet-name>
+  	<servlet-class>userole.updateLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>updateLoginServlet</servlet-name>
+  	<url-pattern>/updateLoginServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>delLoginServlet</servlet-name>
+  	<servlet-class>userole.delLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delLoginServlet</servlet-name>
+  	<url-pattern>/delLoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  	<servlet-name>queryRoleLoginServlet</servlet-name>
+  	<servlet-class>prorole.queryRoleLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>queryRoleLoginServlet</servlet-name>
+  	<url-pattern>/queryRoleLoginServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>addRoleLoginServlet</servlet-name>
+  	<servlet-class>prorole.addRoleLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addRoleLoginServlet</servlet-name>
+  	<url-pattern>/addRoleLoginServlet</url-pattern>
+  </servlet-mapping>
+   <servlet>
+  	<servlet-name>updateRoleLoginServlet</servlet-name>
+  	<servlet-class>prorole.updateRoleLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>updateRoleLoginServlet</servlet-name>
+  	<url-pattern>/updateRoleLoginServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>delRoleLoginServlet</servlet-name>
+  	<servlet-class>prorole.delRoleLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delRoleLoginServlet</servlet-name>
+  	<url-pattern>/delRoleLoginServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>adminUseRoleListServlet</servlet-name>
+  	<servlet-class>adminManage.adminUseRoleListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>adminUseRoleListServlet</servlet-name>
+  	<url-pattern>/adminUseRoleListServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>useProjectListServelt</servlet-name>
+  	<servlet-class>adminManage.useProjectListServelt</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>useProjectListServelt</servlet-name>
+  	<url-pattern>/useProjectListServelt</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  	<servlet-name>adminProRoleListServelt</servlet-name>
+  	<servlet-class>adminManage.adminProRoleListServelt</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>adminProRoleListServelt</servlet-name>
+  	<url-pattern>/adminProRoleListServelt</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>projectUpdateServlet</servlet-name>
+  	<servlet-class>adminManage.projectUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>projectUpdateServlet</servlet-name>
+  	<url-pattern>/projectUpdateServlet</url-pattern>
+  </servlet-mapping>
+  
+
+   <servlet>
+  	<servlet-name>loginOutServlet</servlet-name>
+  	<servlet-class>Login.loginOutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>loginOutServlet</servlet-name>
+  	<url-pattern>/loginOutServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>useQueryServlet</servlet-name>
+  	<servlet-class>user.queryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>useQueryServlet</servlet-name>
+  	<url-pattern>/use/queryServlet</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+  	<servlet-name>useUpdateServlet</servlet-name>
+  	<servlet-class>user.updateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>useUpdateServlet</servlet-name>
+  	<url-pattern>/use/updateServlet</url-pattern>
+  </servlet-mapping>
+  
+ 
+  
+       <servlet>
+ <servlet-name>/user/updateprojectsubmitServlet</servlet-name>
+  	<servlet-class>user.updateprojectsubmitServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>/user/updateprojectsubmitServlet</servlet-name>
+  	<url-pattern>/user/updateprojectsubmitServlet</url-pattern>
+  </servlet-mapping>
+  
+        <servlet>
+ <servlet-name>/user/delprojectsubmitServlet</servlet-name>
+  	<servlet-class>user.delprojectsubmitServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>/user/delprojectsubmitServlet</servlet-name>
+  	<url-pattern>/user/delprojectsubmitServlet</url-pattern>
+  </servlet-mapping>
+  
+        <servlet>
+ <servlet-name>/user/addprojectsubmitServlet</servlet-name>
+  	<servlet-class>user.addprojectsubmitServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>/user/addprojectsubmitServlet</servlet-name>
+  	<url-pattern>/user/addprojectsubmitServlet</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+ <servlet-name>/pro/queryproInfoServlet</servlet-name>
+  	<servlet-class>pro.queryproInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>/pro/queryproInfoServlet</servlet-name>
+  	<url-pattern>/pro/queryproInfoServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+ <servlet-name>/pro/updateproInfoServlet</servlet-name>
+  	<servlet-class>pro.updateproInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>/pro/updateproInfoServlet</servlet-name>
+  	<url-pattern>/pro/updateproInfoServlet</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+ <servlet-name>/pro/proprojectlistServlet</servlet-name>
+  	<servlet-class>pro.proprojectlistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>/pro/proprojectlistServlet</servlet-name>
+  	<url-pattern>/pro/proprojectlistServlet</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+ <servlet-name>updatepasswordServlet</servlet-name>
+  	<servlet-class>adminManage.updatepasswordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>updatepasswordServlet</servlet-name>
+  	<url-pattern>/updatepasswordServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+ <servlet-name>/pro/queryprojectdetailsServlet</servlet-name>
+  	<servlet-class>pro.queryprojectdetailsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>/pro/queryprojectdetailsServlet</servlet-name>
+  	<url-pattern>/pro/queryprojectdetailsServlet</url-pattern>
+  </servlet-mapping>
+ <servlet>
+ <servlet-name>/score/queryServlet</servlet-name>
+  	<servlet-class>score.queryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>/score/queryServlet</servlet-name>
+  	<url-pattern>/score/queryServlet</url-pattern>
+  </servlet-mapping>
+   <servlet>
+ <servlet-name>/score/updateServlet</servlet-name>
+  	<servlet-class>score.updateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>/score/updateServlet</servlet-name>
+  	<url-pattern>/score/updateServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>uplodeFileServlet</servlet-name>
+  	<servlet-class>user.uplodeFileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>uplodeFileServlet</servlet-name>
+  	<url-pattern>/uplodeFileServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>downloadMuBanServlet</servlet-name>
+  	<servlet-class>user.downloadMuBanServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>downloadMuBanServlet</servlet-name>
+  	<url-pattern>/downloadMuBanServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>/common/sort</servlet-name>
+  	<servlet-class>common.sortServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>/common/sort</servlet-name>
+  	<url-pattern>/common/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>/common/domain</servlet-name>
+  	<servlet-class>common.domainServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>/common/domain</servlet-name>
+  	<url-pattern>/domain/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>/userole/userlogin</servlet-name>
+  	<servlet-class>userole.userloginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>/userole/userlogin</servlet-name>
+  	<url-pattern>/userole/*</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <servlet-name>/prorole/prologin</servlet-name>
+  	<servlet-class>prorole.prologinServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>/prorole/prologin</servlet-name>
+  	<url-pattern>/prorole/*</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>/user/userInfo</servlet-name>
+  	<servlet-class>user.userInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>/user/userInfo</servlet-name>
+  	<url-pattern>/userInfo/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>/user/userprojectopreationServlet</servlet-name>
+  	<servlet-class>user.userprojectopreationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>/user/userprojectopreationServlet</servlet-name>
+  	<url-pattern>/userprojectopreation/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>/pro/proInfo</servlet-name>
+  	<servlet-class>pro.proInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>/pro/proInfo</servlet-name>
+  	<url-pattern>/proInfo/*</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>loginServlet</servlet-name>
+  	<servlet-class>Login.loginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>loginServlet</servlet-name>
+  	<url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
